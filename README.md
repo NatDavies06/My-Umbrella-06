@@ -27,6 +27,12 @@ My-Umbrella is a web application that allows users to search the current and fut
 
 ## Demo
 
+## Installation:
+
+1. Clone the repository:
+[My Umbrella Rep](https://github.com/NatDavies06/My-Umbrella-06.git)
+
+2. Open the index.html in your browser.
 
 ## Technologies:
 
@@ -35,12 +41,3 @@ My-Umbrella is a web application that allows users to search the current and fut
 * JavaScript
 * OpenWeatherMap API
 * localStorage
-
-## Installation:
-
-1. Clone the repository:
-[My Umbrella Rep](https://github.com/NatDavies06/My-Umbrella-06.git)
-
-2. Open the index.html in your browser.
-
-## License:
