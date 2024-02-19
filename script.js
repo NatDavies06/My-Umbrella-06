@@ -104,6 +104,13 @@ function saveSearchHistory(city) {
     searchHistoryDiv.appendChild(searchItem);
 }
 
+    // Added header "Search History" 
+  if (!searchHistoryDiv.firstChild) {
+    const header = document.createElement('h3');
+    header.textContent = 'Search History';
+    searchHistoryDiv.appendChild(header);
+  };
+
 // Event listener for form submission
 document.getElementById('searchForm').addEventListener('submit', function(event) {
     event.preventDefault();
