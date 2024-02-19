@@ -102,14 +102,14 @@ function saveSearchHistory(city) {
         getWeather(city);
     });
     searchHistoryDiv.appendChild(searchItem);
-}
 
-    // Added header "Search History" 
-  if (!searchHistoryDiv.firstChild) {
-    const header = document.createElement('h3');
-    header.textContent = 'Search History';
-    searchHistoryDiv.appendChild(header);
-  };
+    // Moved this code inside saveSearchHistory function
+    if (!searchHistoryDiv.firstChild) {
+        const header = document.createElement('h3');
+        header.textContent = 'Search History';
+        searchHistoryDiv.appendChild(header);
+    }
+}
 
 // Event listener for form submission
 document.getElementById('searchForm').addEventListener('submit', function(event) {
