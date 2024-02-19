@@ -31,6 +31,8 @@ My Umbrella is a web application that allows users to search the current and fut
 
 ## Demo
 
+[Demo](https://natdavies06.github.io/My-Umbrella-06/)
+
 ## Installation:
 
 1. Clone the repository:
