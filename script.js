@@ -92,16 +92,22 @@ function displayForecast(data) {
     });
 }
 
-// Function to save search history
-function saveSearchHistory(city) {
-    const searchHistoryDiv = document.getElementById('searchHistory');
-    const searchItem = document.createElement('div');
-    searchItem.textContent = city;
-    searchItem.classList.add('search-item');
-    searchItem.addEventListener('click', () => {
-        getWeather(city);
-    });
-    searchHistoryDiv.appendChild(searchItem);
+    // Function to save search history
+    function saveSearchHistory(city) {
+        const searchHistoryDiv = document.getElementById('searchHistory');
+        if (!searchHistoryDiv.querySelector('h3')) {
+            const header = document.createElement('h3');
+            header.textContent = 'Search History';
+            header.style.color = 'blue';
+            searchHistoryDiv.appendChild(header);
+        }
+    
+        const searchItem = document.createElement('div');
+        searchItem.textContent = city;
+        searchItem.classList.add('search-item');
+        searchItem.addEventListener('click', () => {
+            getWeather(city);
+        });    searchHistoryDiv.appendChild(searchItem);
 
     // Moved this code inside saveSearchHistory function
     if (!searchHistoryDiv.firstChild) {
